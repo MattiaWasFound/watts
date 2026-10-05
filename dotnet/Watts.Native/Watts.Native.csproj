@@ -16,4 +16,9 @@
   <ItemGroup>
     <ProjectReference Include="../Watts.Core/Watts.Core.csproj" />
   </ItemGroup>
+  <!-- On Windows, C and C++ link against the import library, which NativeAOT leaves beside its
+       intermediate output; ship it with the DLL. -->
+  <Target Name="PublishImportLibrary" AfterTargets="Publish" Condition="$(RuntimeIdentifier.StartsWith('win'))">
+    <Copy SourceFiles="$(NativeOutputPath)$(TargetName).lib" DestinationFolder="$(PublishDir)" />
+  </Target>
 </Project>
