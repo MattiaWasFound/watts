@@ -30,7 +30,8 @@ extra = []
 if lib_path.endswith((".dylib", ".so")):
     flags = ["-gU"] if lib_path.endswith(".dylib") else ["-D", "--defined-only"]
     names = subprocess.run(["nm", *flags, lib_path], capture_output=True, text=True, check=True).stdout
-    exported = {line.split()[-1].lstrip("_") for line in names.splitlines() if " T " in line}
+    # Linux versions its symbols ("watts_read@@V1.0"); macOS prefixes them with "_".
+    exported = {line.split()[-1].lstrip("_").split("@")[0] for line in names.splitlines() if " T " in line}
     extra = sorted(n for n in exported if n.startswith("watts_") and n not in declared)
 print(f"exports: {len(declared)} declared, missing {missing or 'none'}, undeclared {extra or 'none'}")
 sys.exit(1 if missing or extra else 0)

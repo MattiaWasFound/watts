@@ -73,7 +73,16 @@ namespace Watts.Tests
             Assert.Throws<PlatformNotSupportedException>(() => new LinuxPlatform.LinuxBatterySensor(Laptop(), root));
         }
 
-        [Fact]
+        /// <summary>RAPL's sysfs names contain ':', which Windows does not allow in a file name.</summary>
+        public sealed class NotOnWindowsFactAttribute : FactAttribute
+        {
+            public NotOnWindowsFactAttribute()
+            {
+                if (OperatingSystem.IsWindows()) Skip = "RAPL's sysfs paths contain ':', which Windows file names cannot";
+            }
+        }
+
+        [NotOnWindowsFact]
         public void Rapl_turns_energy_into_power_and_survives_the_counter_wrapping()
         {
             Write("sys/class/powercap/intel-rapl:0/name", "package-0");
