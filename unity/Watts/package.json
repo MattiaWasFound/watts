@@ -1,0 +1,15 @@
+{
+  "name": "com.mattia.watts",
+  "version": "0.2.0",
+  "displayName": "Watts",
+  "description": "Work in progress. An estimate of how much power the player's computer draws right now, at the wall, in watts, plus the session's watt-hours and whether the figure was measured or estimated. macOS, Windows and Linux; no admin rights, no network, no native binaries.",
+  "unity": "2021.3",
+  "author": {
+    "name": "Mattia",
+    "url": "https://github.com/MattiaWasFound"
+  },
+  "license": "MIT",
+  "documentationUrl": "https://github.com/MattiaWasFound/watts#readme",
+  "changelogUrl": "https://github.com/MattiaWasFound/watts/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/MattiaWasFound/watts/blob/main/LICENSE"
+}

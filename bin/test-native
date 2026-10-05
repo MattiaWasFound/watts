@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+# Builds libwatts for this machine with NativeAOT and checks it against include/watts.h:
+#   1. the library exports exactly the functions the header declares;
+#   2. tests/native/test_watts.c, compiled against the header, passes;
+#   3. the Python example runs.
+# Needs Microsoft's .NET SDK (DOTNET=<path to dotnet> to pick one; Homebrew's cannot link NativeAOT),
+# a C compiler (cc, or clang on Windows) and python3 (or python).
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+out="${RUNNER_TEMP:-$(mktemp -d)}/libwatts"
+"${DOTNET:-dotnet}" publish dotnet/Watts.Native -c Release --use-current-runtime -o "$out" -nologo -v q
+case "$(uname -s)" in
+  Darwin) lib="$out/libwatts.dylib" ;;
+  Linux) lib="$out/libwatts.so" ;;
+  *) lib="$out/libwatts.dll" ;;
+esac
+[ -f "$lib" ] || { echo "no library at $lib"; exit 1; }
+py=$(command -v python3 || command -v python)
+version=$(grep -o '"[0-9][0-9.]*[0-9]' dotnet/Watts.Native/Exports.cs | head -1 | tr -d '"')
+
+# 1. Exports against the header.
+"$py" - "$lib" include/watts.h <<'PY'
+import ctypes, re, subprocess, sys
+lib_path, header = sys.argv[1], sys.argv[2]
+declared = set(re.findall(r"WATTS_API\s+[^;(]*?\b(watts_\w+)\s*\(", open(header).read()))
+lib = ctypes.CDLL(lib_path)
+missing = sorted(n for n in declared if not hasattr(lib, n))
+extra = []
+if lib_path.endswith((".dylib", ".so")):
+    flags = ["-gU"] if lib_path.endswith(".dylib") else ["-D", "--defined-only"]
+    names = subprocess.run(["nm", *flags, lib_path], capture_output=True, text=True, check=True).stdout
+    exported = {line.split()[-1].lstrip("_") for line in names.splitlines() if " T " in line}
+    extra = sorted(n for n in exported if n.startswith("watts_") and n not in declared)
+print(f"exports: {len(declared)} declared, missing {missing or 'none'}, undeclared {extra or 'none'}")
+sys.exit(1 if missing or extra else 0)
+PY
+
+# 2. The C test.
+exe="$out/test_watts"
+case "$(uname -s)" in
+  Darwin) cc tests/native/test_watts.c -Iinclude "$lib" -Wl,-rpath,"$out" -o "$exe" ;;
+  Linux) cc tests/native/test_watts.c -Iinclude "$lib" -Wl,-rpath,"$out" -o "$exe" ;;
+  *) exe="$exe.exe"; clang tests/native/test_watts.c -Iinclude "$out/libwatts.lib" -o "$exe" ;;
+esac
+"$exe" "$version"
+
+# 3. The Python example.
+"$py" examples/watts_example.py "$lib"

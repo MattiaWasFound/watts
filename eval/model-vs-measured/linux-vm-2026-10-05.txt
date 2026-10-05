@@ -1,0 +1,84 @@
+watts-probe 0.2.0 · 2026-10-05 21:56:13 +00:00
+OS: Ubuntu 26.04.1 LTS (X64), process X64
+Hardware: Linux, CPU "AMD EPYC-Rome Processor" (2 threads), GPU "" (0 MB), desktop, virtual machine
+
+== Sensors, read twice one second apart ==
+- Battery discharge (power_supply): unavailable (PlatformNotSupportedException: no system battery)
+- CPU package (RAPL powercap): unavailable (PlatformNotSupportedException: no RAPL package domain)
+- AMD GPU (amdgpu hwmon): unavailable (PlatformNotSupportedException: no amdgpu device with a power sensor)
+- CPU load (/proc/stat): CpuLoad 0.004975 (/proc/stat)
+
+== Linux power interfaces ==
+/sys/class/power_supply: empty
+/sys/class/powercap: empty
+/sys/class/hwmon: empty
+/sys/class/drm/card0: DRIVER=virtio-pci
+/sys/class/drm/card0-Virtual-1: -
+/sys/class/drm/renderD128: DRIVER=virtio-pci
+dmi: Hetzner / vServer / chassis 1
+
+
+== Round ==
+   t  phase   wall W  label      Wh total   model-only W   source
+   0  idle      14.7  estimated   0.0000         14.7     CPU 6.5 W (model, 30 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: 
+   1  idle      13.0  estimated   0.0039         13.0     CPU 5.1 W (model, 3 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 3 %
+   2  idle      12.9  estimated   0.0075         12.9     CPU 5.0 W (model, 1 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 1 %
+   3  idle      12.9  estimated   0.0110         12.9     CPU 5.1 W (model, 1 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 1 %
+   4  idle      12.9  estimated   0.0146         12.9     CPU 5.0 W (model, 1 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 1 %
+   5  idle      12.9  estimated   0.0182         12.9     CPU 5.0 W (model, 1 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 1 %
+   6  idle      12.9  estimated   0.0218         12.9     CPU 5.0 W (model, 1 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 1 %
+   7  idle      13.0  estimated   0.0254         13.0     CPU 5.2 W (model, 3 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 3 %
+   8  idle      12.8  estimated   0.0290         12.8     CPU 5.0 W (model, 0 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 0 %
+   9  idle      12.9  estimated   0.0325         12.9     CPU 5.0 W (model, 1 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 1 %
+  10  idle      12.8  estimated   0.0361         12.8     CPU 5.0 W (model, 0 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 0 %
+  11  idle      12.9  estimated   0.0397         12.9     CPU 5.1 W (model, 1 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 1 %
+  12  idle      12.8  estimated   0.0433         12.8     CPU 5.0 W (model, 0 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 0 %
+  13  idle      12.9  estimated   0.0468         12.9     CPU 5.0 W (model, 1 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 1 %
+  14  idle      12.9  estimated   0.0504         12.9     CPU 5.0 W (model, 1 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 1 %
+  15  load      12.9  estimated   0.0540         12.9     CPU 5.0 W (model, 1 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 1 %
+  16  load      19.2  estimated   0.0584         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  17  load      19.2  estimated   0.0638         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  18  load      19.2  estimated   0.0691         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  19  load      19.2  estimated   0.0745         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  20  load      19.2  estimated   0.0798         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  21  load      19.2  estimated   0.0852         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  22  load      19.2  estimated   0.0905         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  23  load      19.2  estimated   0.0959         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  24  load      19.2  estimated   0.1012         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  25  load      19.2  estimated   0.1066         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  26  load      19.2  estimated   0.1119         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  27  load      19.2  estimated   0.1173         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  28  load      19.2  estimated   0.1226         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  29  load      19.2  estimated   0.1279         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  30  load      19.2  estimated   0.1333         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  31  load      19.2  estimated   0.1386         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  32  load      19.2  estimated   0.1440         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  33  load      19.2  estimated   0.1493         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  34  load      19.2  estimated   0.1547         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  35  idle2     19.2  estimated   0.1600         19.2     CPU 10.0 W (model, 100 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 100 %
+  36  idle2     12.8  estimated   0.1645         12.8     CPU 5.0 W (model, 0 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 0 %
+  37  idle2     12.8  estimated   0.1680         12.8     CPU 5.0 W (model, 0 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 0 %
+  38  idle2     12.9  estimated   0.1716         12.9     CPU 5.0 W (model, 1 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 1 %
+  39  idle2     12.8  estimated   0.1752         12.8     CPU 5.0 W (model, 0 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 0 %
+  40  idle2     12.8  estimated   0.1787         12.8     CPU 5.0 W (model, 0 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 0 %
+  41  idle2     12.8  estimated   0.1823         12.8     CPU 5.0 W (model, 0 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 0 %
+  42  idle2     12.8  estimated   0.1859         12.8     CPU 5.0 W (model, 0 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 0 %
+  43  idle2     12.8  estimated   0.1894         12.8     CPU 5.0 W (model, 0 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 0 %
+  44  idle2     12.8  estimated   0.1930         12.8     CPU 5.0 W (model, 0 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 0 %
+  45  idle2     12.8  estimated   0.1966         12.8     CPU 5.0 W (model, 0 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 0 %
+  46  idle2     12.9  estimated   0.2001         12.9     CPU 5.0 W (model, 1 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 1 %
+  47  idle2     12.8  estimated   0.2037         12.8     CPU 5.0 W (model, 0 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 0 %
+  48  idle2     12.9  estimated   0.2073         12.9     CPU 5.0 W (model, 1 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 1 %
+  49  idle2     12.8  estimated   0.2108         12.8     CPU 5.0 W (model, 0 % busy) + rest 5 W (model), ÷0.78 for adapter/PSU losses; virtual machine, the host's draw is unknowable  | all: CpuLoad 0 %
+
+Sensor status at the end of the round:
+Battery discharge (power_supply): unavailable: PlatformNotSupportedException no system battery
+CPU package (RAPL powercap): unavailable: PlatformNotSupportedException no RAPL package domain
+AMD GPU (amdgpu hwmon): unavailable: PlatformNotSupportedException no amdgpu device with a power sensor
+CPU load (/proc/stat): ok
+
+== Summary (mean wall watts per phase) ==
+round        phase   meter W  label      model-only W
+as found     idle       13.0  estimated       13.0
+as found     load       18.9  estimated       18.9
+as found     idle2      13.3  estimated       13.3

@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Build and test
+        shell: bash
+        run: bin/verify
+      # The runners are virtual machines, so most sensors report unavailable. These check that
+      # every sensor fails gracefully on a real Windows, macOS and Linux, and that the meter still
+      # returns a number through each way of using it.
+      - name: Probe, quick
+        shell: bash
+        run: dotnet run --project dotnet/Watts.Probe -c Release -- --quick --batch --out "$RUNNER_TEMP"
+      - name: CLI, once
+        shell: bash
+        run: dotnet run --project dotnet/Watts.Cli -c Release -- --once | tee "$RUNNER_TEMP/once.json" && grep -q '"watts":' "$RUNNER_TEMP/once.json"
+      # Exports against include/watts.h, the C test program, the Python example.
+      - name: libwatts
+        shell: bash
+        run: bin/test-native

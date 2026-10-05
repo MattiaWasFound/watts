@@ -1,0 +1,39 @@
+name: Field report
+description: Share a watts-probe report from your machine
+title: "Field report: <CPU> / <GPU> / <OS>"
+labels: ["field report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Download `watts-probe` for your machine from the [latest release](https://github.com/MattiaWasFound/watts/releases/latest), run it, and attach the `watts-report-….txt` it saves. See [docs/field-test.md](https://github.com/MattiaWasFound/watts/blob/main/docs/field-test.md).
+  - type: textarea
+    id: report
+    attributes:
+      label: Report
+      description: Drag the report file here, or paste its contents.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Machine
+      options:
+        - Desktop
+        - Laptop
+        - Mini PC or small form factor
+        - Virtual machine
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: wall
+    attributes:
+      label: Wall meter or smart plug reading (if you have one)
+      description: What it showed during the idle and busy parts, roughly. This is the most valuable part of a report.
+      placeholder: "About 65 W idle, 140 W during the busy part. Shelly Plug S."
+  - type: textarea
+    id: settings
+    attributes:
+      label: Power settings worth knowing
+      description: Turbo or boost off, power limits set in the BIOS, a laptop's silent or performance mode, an undervolt, an external monitor plugged in…

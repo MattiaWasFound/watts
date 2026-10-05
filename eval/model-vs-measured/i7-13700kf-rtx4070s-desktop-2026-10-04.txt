@@ -1,0 +1,36 @@
+watts-probe 0.1.5 · 2026-10-04 23:50:02 +02:00
+OS: Microsoft Windows 10.0.26300 (X64), process X64
+Hardware: Windows, CPU "13th Gen Intel(R) Core(TM) i7-13700KF" (24 threads), GPU "NVIDIA GeForce RTX 4070 SUPER" (12282 MB), desktop
+(Turbo Boost switched off by the owner: small form factor case.)
+
+== Sensors, read twice one second apart ==
+- Battery discharge (battery driver, else CallNtPowerInformation): unavailable (PlatformNotSupportedException: no battery)
+- Energy meters (EMI): unavailable (PlatformNotSupportedException: energy meters present but unusable: EMI ioctl 0x226000 failed (50))
+- NVIDIA GPU (NVML): Gpu 38.17 (NVML card 0); GpuLoad 0.11 (NVML)
+- CPU load (GetSystemTimes): CpuLoad 0.04145 (GetSystemTimes)
+- GPU load (PDH GPU Engine): GpuLoad 0.3456 (PDH GPU Engine, NVIDIA GeForce RTX 4070 SUPER)
+
+== Round == (rows abridged: t, phase, wall W, Wh, model-only W, NVML GPU W, NVML load, CPU load, PDH GPU load)
+   0  idle     106.5  0.0000  101.0  19.2  21%   -    -
+   1  idle      73.9  0.0261  159.2  18.1  24%   4%  38%
+   5  idle      66.1  0.1043  192.3  12.1  39%   3%  53%
+  10  idle      65.9  0.1967  197.4  11.6  43%   4%  55%
+  14  idle      67.1  0.2711  197.2  11.8  43%   4%  54%
+  17  load     184.2  0.3355  322.5  11.8  43% 100%  56%
+  20  load     184.6  0.5235  319.4  12.2  43% 100%  56%
+  25  load     184.4  0.7867  307.8  12.0  31% 100%  51%
+  30  load     185.6  1.0267  301.4  13.2  37% 100%  48%
+  35  load     192.4  1.2746  281.4  19.5  22% 100%  44%
+  37  idle2     98.3  1.3777  110.6  38.2  15%   6%  17%
+  40  idle2     85.5  1.4553  159.8  19.4  19%  12%  34%
+  44  idle2     68.7  1.5410  191.5  12.2  47%   5%  51%
+  48  idle2     95.3  1.6268  112.6  38.0  16%   4%  19%
+  50  idle2     87.5  1.6772  140.3  26.9  27%   7%  29%
+Every row: CPU from the model (125 W class at 100%, 16-17 W at 4% busy), GPU from NVML, rest 25 W,
+divided by 0.81 (idle) to 0.88 (load) for the ATX supply.
+
+== Summary (mean wall watts per phase) ==
+round        phase   meter W  label      model-only W
+as found     idle       70.2  estimated      185.4
+as found     load      179.9  estimated      305.6
+as found     idle2      90.7  estimated      158.0

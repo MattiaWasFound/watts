@@ -1,0 +1,21 @@
+bin/obj/
+**/obj/
+**/bin/Debug/
+**/bin/Release/
+dotnet/**/bin/
+/out/
+/artifacts/
+.DS_Store
+# Unity harness project
+unity/WattsHarness/Library/
+unity/WattsHarness/Temp/
+unity/WattsHarness/Logs/
+unity/WattsHarness/UserSettings/
+unity/WattsHarness/Build/
+unity/WattsHarness/*.csproj
+unity/WattsHarness/*.sln
+unity/WattsHarness/*.slnx
+# eval/apple-pstr-vs-ioreport reruns
+eval/apple-pstr-vs-ioreport/probe
+eval/apple-pstr-vs-ioreport/*.csv
+eval/apple-pstr-vs-ioreport/*.txt

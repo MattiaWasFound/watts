@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# The one verification entry point. Default: the Core compiled as Unity compiles it
+# (netstandard2.1, C# 9), the probe, the CLI and libwatts, the unit tests, and the package's .meta files.
+#   bin/verify --unity   also runs the PlayMode tests in the harness project (needs the Unity editor).
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+dotnet build dotnet/Watts.Core -v q -nologo
+dotnet build dotnet/Watts.Probe -v q -nologo
+dotnet build dotnet/Watts.Cli -v q -nologo
+dotnet build dotnet/Watts.Native -v q -nologo
+dotnet test dotnet/Watts.Tests -v q -nologo
+
+# An immutable package ignores any file without a sibling .meta, silently.
+missing=$( { find unity/Watts -type f ! -name '*.meta' | while read -r f; do [ -f "$f.meta" ] || echo "$f"; done
+             find unity/Watts -mindepth 1 -type d | while read -r d; do [ -f "$d.meta" ] || echo "$d/"; done; } )
+if [ -n "$missing" ]; then
+  echo "missing .meta (open unity/WattsHarness in Unity once to generate):"
+  echo "$missing"
+  exit 1
+fi
+echo "meta files: ok"
+
+if [ "${1:-}" = "--unity" ]; then
+  unity="${UNITY:-$(ls -d /Applications/Unity/Hub/Editor/*/Unity.app/Contents/MacOS/Unity 2>/dev/null | tail -1 || true)}"
+  [ -x "$unity" ] || { echo "Unity editor not found; set UNITY=<path to the Unity binary>"; exit 1; }
+  results="$(mktemp -d)/playmode.xml"
+  "$unity" -batchmode -nographics -projectPath unity/WattsHarness -runTests -testPlatform PlayMode \
+    -testResults "$results" -logFile "${results%.xml}.log" || true
+  grep -o '<test-run [^>]*>' "$results" | grep -q 'result="Passed"' || { echo "PlayMode tests failed: $results"; exit 1; }
+  echo "PlayMode tests: passed ($results)"
+fi

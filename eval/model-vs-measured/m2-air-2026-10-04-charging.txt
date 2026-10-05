@@ -1,0 +1,133 @@
+watts-probe 0.1.1 · 2026-10-04 17:50:30 +02:00
+OS: macOS 26.5.2 (Arm64), process Arm64
+Hardware: MacOS, CPU "Apple M2" (8 threads), GPU "Apple M2 GPU" (0 MB), laptop
+
+== Sensors, read twice one second apart ==
+- SMC system power (PSTR): System 5.612 (SMC PSTR (whole system))
+- Battery discharge (AppleSmartBattery): available, nothing to report right now
+- CPU load (host_statistics): CpuLoad 0.1064 (host_statistics)
+
+== Round ==
+   t  phase   wall W  label      Wh total   model-only W   source
+   0  idle       9.8  measured    0.0000          9.7     SMC PSTR (whole system): 8.5 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=8.53 PDTR=28.37 PPBR=0.37
+   1  idle       9.8  measured    0.0027          6.8     SMC PSTR (whole system): 8.5 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=8.49 PDTR=28.38 PPBR=0.37
+   2  idle       9.5  measured    0.0054          7.0     SMC PSTR (whole system): 8.3 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=8.28 PDTR=28.38 PPBR=0.37
+   3  idle       9.7  measured    0.0081          7.4     SMC PSTR (whole system): 8.4 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=8.40 PDTR=28.38 PPBR=0.37
+   4  idle       9.9  measured    0.0109          6.7     SMC PSTR (whole system): 8.6 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=8.60 PDTR=28.38 PPBR=0.37
+   5  idle       9.4  measured    0.0135          8.1     SMC PSTR (whole system): 8.1 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=8.15 PDTR=28.39 PPBR=0.37
+   6  idle      10.9  measured    0.0164          7.9     SMC PSTR (whole system): 9.5 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=9.51 PDTR=28.39 PPBR=0.38
+   7  idle      10.9  measured    0.0194          7.5     SMC PSTR (whole system): 9.5 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=9.52 PDTR=28.39 PPBR=0.37
+   8  idle      10.1  measured    0.0224          7.1     SMC PSTR (whole system): 8.8 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=8.83 PDTR=28.39 PPBR=0.37
+   9  idle       9.6  measured    0.0251          6.8     SMC PSTR (whole system): 8.3 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=8.33 PDTR=28.39 PPBR=0.37
+  10  idle       9.5  measured    0.0278          6.8     SMC PSTR (whole system): 8.2 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=8.23 PDTR=28.39 PPBR=0.37
+  11  idle       9.4  measured    0.0304          7.2     SMC PSTR (whole system): 8.1 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=8.14 PDTR=28.39 PPBR=0.37
+  12  idle       9.8  measured    0.0331          7.1     SMC PSTR (whole system): 8.5 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=8.54 PDTR=28.40 PPBR=0.37
+  13  idle       9.8  measured    0.0358          7.2     SMC PSTR (whole system): 8.6 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=8.55 PDTR=28.40 PPBR=0.37
+  14  idle       9.6  measured    0.0386          6.7     SMC PSTR (whole system): 8.4 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=8.37 PDTR=28.40 PPBR=0.38
+  15  load       9.5  measured    0.0413          6.7     SMC PSTR (whole system): 8.2 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=8.22 PDTR=28.40 PPBR=0.37
+  16  load       9.5  measured    0.0439         19.1     SMC PSTR (whole system): 8.2 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=8.24 PDTR=28.40 PPBR=0.38
+  17  load      15.9  measured    0.0475         19.1     SMC PSTR (whole system): 13.8 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=13.80 PDTR=28.41 PPBR=0.38
+  18  load      17.4  measured    0.0521         19.1     SMC PSTR (whole system): 15.1 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=15.10 PDTR=28.41 PPBR=0.38
+  19  load      17.0  measured    0.0569         19.1     SMC PSTR (whole system): 14.8 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=14.79 PDTR=28.41 PPBR=0.38
+  20  load      17.4  measured    0.0618         19.1     SMC PSTR (whole system): 15.1 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=15.11 PDTR=28.41 PPBR=0.38
+  21  load      17.4  measured    0.0666         19.1     SMC PSTR (whole system): 15.1 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=15.12 PDTR=28.41 PPBR=0.38
+  22  load      17.5  measured    0.0715         19.1     SMC PSTR (whole system): 15.2 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=15.19 PDTR=28.41 PPBR=0.38
+  23  load      18.1  measured    0.0765         19.1     SMC PSTR (whole system): 15.8 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=15.77 PDTR=28.41 PPBR=0.38
+  24  load      19.1  measured    0.0817         19.1     SMC PSTR (whole system): 16.6 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=16.62 PDTR=28.41 PPBR=0.38
+  25  load      19.0  measured    0.0870         19.1     SMC PSTR (whole system): 16.5 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=16.52 PDTR=28.41 PPBR=0.38
+  26  load      18.8  measured    0.0923         19.1     SMC PSTR (whole system): 16.3 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=16.34 PDTR=28.41 PPBR=0.39
+  27  load      19.0  measured    0.0976         19.1     SMC PSTR (whole system): 16.5 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=16.50 PDTR=28.41 PPBR=0.38
+  28  load      19.1  measured    0.1029         19.1     SMC PSTR (whole system): 16.6 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=16.65 PDTR=28.41 PPBR=0.39
+  29  load      18.9  measured    0.1082         19.1     SMC PSTR (whole system): 16.5 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=16.47 PDTR=28.41 PPBR=0.39
+  30  load      19.3  measured    0.1136         19.1     SMC PSTR (whole system): 16.8 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=16.79 PDTR=28.41 PPBR=0.38
+  31  load      19.0  measured    0.1190         19.1     SMC PSTR (whole system): 16.5 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=16.54 PDTR=28.41 PPBR=0.39
+  32  load      20.0  measured    0.1244         19.1     SMC PSTR (whole system): 17.4 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=17.42 PDTR=28.41 PPBR=0.39
+  33  load      19.3  measured    0.1299         19.1     SMC PSTR (whole system): 16.8 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=16.78 PDTR=28.41 PPBR=0.39
+  34  load      19.3  measured    0.1353         19.1     SMC PSTR (whole system): 16.8 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=16.78 PDTR=28.42 PPBR=0.39
+  35  idle2     19.1  measured    0.1407         19.1     SMC PSTR (whole system): 16.6 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=16.59 PDTR=28.41 PPBR=0.38
+  36  idle2     17.5  measured    0.1458          8.4     SMC PSTR (whole system): 15.2 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=15.24 PDTR=28.41 PPBR=0.39
+  37  idle2     13.5  measured    0.1501          9.7     SMC PSTR (whole system): 11.7 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=11.72 PDTR=28.41 PPBR=0.39
+  38  idle2     14.0  measured    0.1540          8.6     SMC PSTR (whole system): 12.2 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=12.20 PDTR=28.41 PPBR=0.39
+  39  idle2     15.3  measured    0.1581          8.1     SMC PSTR (whole system): 13.3 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=13.29 PDTR=28.41 PPBR=0.39
+  40  idle2     12.9  measured    0.1620          7.6     SMC PSTR (whole system): 11.2 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=11.23 PDTR=28.41 PPBR=0.39
+  41  idle2     11.8  measured    0.1654          7.7     SMC PSTR (whole system): 10.3 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=10.28 PDTR=28.41 PPBR=0.38
+  42  idle2     10.6  measured    0.1686          8.0     SMC PSTR (whole system): 9.2 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=9.24 PDTR=28.41 PPBR=0.39
+  43  idle2     10.8  measured    0.1716          8.2     SMC PSTR (whole system): 9.4 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=9.43 PDTR=28.41 PPBR=0.39
+  44  idle2     11.0  measured    0.1746          7.8     SMC PSTR (whole system): 9.5 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=9.55 PDTR=28.41 PPBR=0.39
+  45  idle2     11.5  measured    0.1778          8.2     SMC PSTR (whole system): 10.0 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=10.03 PDTR=28.41 PPBR=0.38
+  46  idle2     11.8  measured    0.1810          7.8     SMC PSTR (whole system): 10.2 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=10.25 PDTR=28.41 PPBR=0.38
+  47  idle2     12.4  measured    0.1844          8.3     SMC PSTR (whole system): 10.8 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=10.75 PDTR=28.41 PPBR=0.38
+  48  idle2     12.0  measured    0.1878          7.8     SMC PSTR (whole system): 10.4 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=10.43 PDTR=28.41 PPBR=0.39
+  49  idle2     13.0  measured    0.1913          7.7     SMC PSTR (whole system): 11.3 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1346 mV=11399 pct=15 PSTR=11.35 PDTR=28.41 PPBR=0.39
+
+Sensor status at the end of the round:
+SMC system power (PSTR): ok
+Battery discharge (AppleSmartBattery): ok, nothing this tick
+CPU load (host_statistics): ok
+
+== Round ==
+   t  phase   wall W  label      Wh total   model-only W   source
+   0  idle      11.5  measured    0.0000          9.7     SMC PSTR (whole system): 10.0 W DC, ÷0.87 for adapter/PSU losses  | ext=True charging=True mA=1599 mV=11492 pct=15 PSTR=10.04 PDTR=24.44 PPBR=1.59
+   1  idle      12.5  measured    0.0033          9.5     SMC PSTR (whole system): 10.9 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=10.87 PDTR=0.00 PPBR=8.68
+   2  idle       9.9  measured    0.0065          8.6     SMC PSTR (whole system): 8.6 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=8.60 PDTR=0.00 PPBR=7.63
+   3  idle       7.7  measured    0.0089          8.7     SMC PSTR (whole system): 6.7 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=6.73 PDTR=0.00 PPBR=4.98
+   4  idle       5.5  measured    0.0108          8.8     SMC PSTR (whole system): 4.8 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=4.78 PDTR=0.00 PPBR=7.00
+   5  idle       8.2  measured    0.0127         11.4     SMC PSTR (whole system): 7.1 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=7.11 PDTR=0.00 PPBR=9.72
+   6  idle      10.7  measured    0.0153          8.5     SMC PSTR (whole system): 9.3 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=9.29 PDTR=0.00 PPBR=9.75
+   7  idle      10.7  measured    0.0183          8.0     SMC PSTR (whole system): 9.3 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=9.29 PDTR=0.00 PPBR=7.34
+   8  idle       8.1  measured    0.0209          7.4     SMC PSTR (whole system): 7.1 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=7.05 PDTR=0.00 PPBR=8.20
+   9  idle       8.7  measured    0.0233          6.9     SMC PSTR (whole system): 7.6 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=7.61 PDTR=0.00 PPBR=5.61
+  10  idle       6.5  measured    0.0254          7.4     SMC PSTR (whole system): 5.6 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=5.64 PDTR=0.00 PPBR=5.29
+  11  idle       5.6  measured    0.0271          8.1     SMC PSTR (whole system): 4.9 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=4.88 PDTR=0.00 PPBR=5.47
+  12  idle       6.1  measured    0.0287          8.1     SMC PSTR (whole system): 5.3 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=5.29 PDTR=0.00 PPBR=7.32
+  13  idle       8.0  measured    0.0307          7.7     SMC PSTR (whole system): 7.0 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=6.99 PDTR=0.00 PPBR=6.85
+  14  idle       7.6  measured    0.0329          7.6     SMC PSTR (whole system): 6.6 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=6.63 PDTR=0.00 PPBR=6.24
+  15  load       6.8  measured    0.0350          7.8     SMC PSTR (whole system): 5.9 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=5.91 PDTR=0.00 PPBR=6.17
+  16  load       6.7  measured    0.0369         19.1     SMC PSTR (whole system): 5.9 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=5.86 PDTR=0.00 PPBR=7.76
+  17  load       8.5  measured    0.0390         19.1     SMC PSTR (whole system): 7.4 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=7.36 PDTR=0.00 PPBR=12.77
+  18  load      14.4  measured    0.0422         19.1     SMC PSTR (whole system): 12.5 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=12.49 PDTR=0.00 PPBR=13.43
+  19  load      15.1  measured    0.0463         19.1     SMC PSTR (whole system): 13.1 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=13.12 PDTR=0.00 PPBR=13.36
+  20  load      15.0  measured    0.0505         19.1     SMC PSTR (whole system): 13.1 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=13.06 PDTR=0.00 PPBR=13.08
+  21  load      14.7  measured    0.0547         19.1     SMC PSTR (whole system): 12.8 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=12.80 PDTR=0.00 PPBR=13.04
+  22  load      14.6  measured    0.0588         19.1     SMC PSTR (whole system): 12.7 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=12.74 PDTR=0.00 PPBR=13.16
+  23  load      14.8  measured    0.0629         19.1     SMC PSTR (whole system): 12.9 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=12.85 PDTR=0.00 PPBR=12.72
+  24  load      14.4  measured    0.0670         19.1     SMC PSTR (whole system): 12.5 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=12.51 PDTR=0.00 PPBR=13.73
+  25  load      15.5  measured    0.0712         19.1     SMC PSTR (whole system): 13.5 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=13.45 PDTR=0.00 PPBR=13.84
+  26  load      15.5  measured    0.0755         19.1     SMC PSTR (whole system): 13.5 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=13.50 PDTR=0.00 PPBR=13.46
+  27  load      15.2  measured    0.0798         19.1     SMC PSTR (whole system): 13.2 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=13.20 PDTR=0.00 PPBR=14.00
+  28  load      15.7  measured    0.0841         19.1     SMC PSTR (whole system): 13.7 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=13.66 PDTR=0.00 PPBR=13.71
+  29  load      15.5  measured    0.0885         19.1     SMC PSTR (whole system): 13.5 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=13.47 PDTR=0.00 PPBR=13.95
+  30  load      15.9  measured    0.0929         19.1     SMC PSTR (whole system): 13.8 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=13.81 PDTR=0.00 PPBR=14.16
+  31  load      15.8  measured    0.0973         19.1     SMC PSTR (whole system): 13.8 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=13.76 PDTR=0.00 PPBR=13.37
+  32  load      14.8  measured    0.1017         19.1     SMC PSTR (whole system): 12.8 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=12.84 PDTR=0.00 PPBR=13.02
+  33  load      14.6  measured    0.1058         19.1     SMC PSTR (whole system): 12.7 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=12.66 PDTR=0.00 PPBR=13.18
+  34  load      14.8  measured    0.1099         19.0     SMC PSTR (whole system): 12.9 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=12.85 PDTR=0.00 PPBR=12.90
+  35  idle2     14.5  measured    0.1140         19.1     SMC PSTR (whole system): 12.6 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=12.61 PDTR=0.00 PPBR=12.86
+  36  idle2     14.4  measured    0.1180          6.8     SMC PSTR (whole system): 12.6 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=12.57 PDTR=0.00 PPBR=12.55
+  37  idle2     14.5  measured    0.1220          6.7     SMC PSTR (whole system): 12.6 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=12.61 PDTR=0.00 PPBR=5.77
+  38  idle2      6.3  measured    0.1250          7.0     SMC PSTR (whole system): 5.5 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=5.51 PDTR=0.00 PPBR=5.79
+  39  idle2      6.3  measured    0.1267          7.5     SMC PSTR (whole system): 5.5 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=5.51 PDTR=0.00 PPBR=6.46
+  40  idle2      7.0  measured    0.1286          7.2     SMC PSTR (whole system): 6.1 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=6.13 PDTR=0.00 PPBR=7.78
+  41  idle2      8.5  measured    0.1308          7.3     SMC PSTR (whole system): 7.4 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=7.43 PDTR=0.00 PPBR=6.75
+  42  idle2      7.5  measured    0.1330          7.6     SMC PSTR (whole system): 6.5 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=6.52 PDTR=0.00 PPBR=6.29
+  43  idle2      6.9  measured    0.1350          8.1     SMC PSTR (whole system): 6.0 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=5.99 PDTR=0.00 PPBR=7.47
+  44  idle2      8.2  measured    0.1371          7.8     SMC PSTR (whole system): 7.2 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=7.17 PDTR=0.00 PPBR=8.58
+  45  idle2      9.4  measured    0.1396          7.9     SMC PSTR (whole system): 8.2 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=8.20 PDTR=0.00 PPBR=8.13
+  46  idle2      9.1  measured    0.1422          7.1     SMC PSTR (whole system): 7.9 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=7.92 PDTR=0.00 PPBR=8.37
+  47  idle2      9.1  measured    0.1447          7.9     SMC PSTR (whole system): 7.9 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=7.94 PDTR=0.00 PPBR=6.29
+  48  idle2      6.9  measured    0.1470          7.4     SMC PSTR (whole system): 6.0 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=6.04 PDTR=0.00 PPBR=6.56
+  49  idle2      7.2  measured    0.1489          7.6     SMC PSTR (whole system): 6.3 W DC, ÷0.87 for adapter/PSU losses  | ext=False charging=False mA=1181 mV=11486 pct=15 PSTR=6.27 PDTR=0.00 PPBR=7.17
+
+Sensor status at the end of the round:
+SMC system power (PSTR): ok
+Battery discharge (AppleSmartBattery): ok, nothing this tick
+CPU load (host_statistics): ok
+
+== Summary (mean wall watts per phase) ==
+round        phase   meter W  label      model-only W
+as found     idle        9.8  measured         7.3
+as found     load       17.5  measured        18.5
+as found     idle2      13.1  measured         8.9
+on mains     idle        8.5  measured         8.4
+on mains     load       13.9  measured        18.5
+on mains     idle2       9.1  measured         8.2

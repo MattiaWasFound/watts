@@ -1,0 +1,72 @@
+watts-probe 0.1.0 · 2026-10-04 17:20:54 +02:00
+OS: macOS 26.5.2 (Arm64), process Arm64
+Hardware: MacOS, CPU "Apple M4" (10 threads), GPU "Apple M4 GPU" (0 MB), desktop
+
+== Sensors, read twice one second apart ==
+- SMC system power (PSTR): System 8.261 (SMC PSTR (whole system))
+- Battery discharge (AppleSmartBattery): unavailable (PlatformNotSupportedException: no battery installed)
+- CPU load (host_statistics): CpuLoad 0.2559 (host_statistics)
+
+== Round ==
+   t  phase   wall W  label      Wh total   model-only W   source
+   0  idle      14.8  measured    0.0000         13.4     SMC PSTR (whole system): 13.4 W DC, ÷0.90 for adapter/PSU losses
+   1  idle      13.9  measured    0.0043         10.1     SMC PSTR (whole system): 12.5 W DC, ÷0.90 for adapter/PSU losses
+   2  idle      11.2  measured    0.0080          9.6     SMC PSTR (whole system): 10.0 W DC, ÷0.90 for adapter/PSU losses
+   3  idle       5.4  measured    0.0104          9.9     SMC PSTR (whole system): 4.9 W DC, ÷0.90 for adapter/PSU losses
+   4  idle       6.5  measured    0.0122         11.3     SMC PSTR (whole system): 5.8 W DC, ÷0.90 for adapter/PSU losses
+   5  idle       6.8  measured    0.0140         11.6     SMC PSTR (whole system): 6.1 W DC, ÷0.90 for adapter/PSU losses
+   6  idle      15.0  measured    0.0173          9.7     SMC PSTR (whole system): 13.5 W DC, ÷0.90 for adapter/PSU losses
+   7  idle      17.4  measured    0.0219         11.6     SMC PSTR (whole system): 15.6 W DC, ÷0.90 for adapter/PSU losses
+   8  idle       5.7  measured    0.0254         14.1     SMC PSTR (whole system): 5.1 W DC, ÷0.90 for adapter/PSU losses
+  10  idle      20.8  measured    0.0293         11.5     SMC PSTR (whole system): 18.7 W DC, ÷0.90 for adapter/PSU losses
+  11  idle      16.0  measured    0.0347         10.7     SMC PSTR (whole system): 14.4 W DC, ÷0.90 for adapter/PSU losses
+  12  idle      12.9  measured    0.0390         13.3     SMC PSTR (whole system): 11.6 W DC, ÷0.90 for adapter/PSU losses
+  13  idle      17.9  measured    0.0435         16.9     SMC PSTR (whole system): 16.2 W DC, ÷0.90 for adapter/PSU losses
+  14  idle      25.6  measured    0.0498         15.7     SMC PSTR (whole system): 23.0 W DC, ÷0.90 for adapter/PSU losses
+  15  idle      25.3  measured    0.0569         13.7     SMC PSTR (whole system): 22.8 W DC, ÷0.90 for adapter/PSU losses
+  16  load      18.8  measured    0.0636         14.8     SMC PSTR (whole system): 16.9 W DC, ÷0.90 for adapter/PSU losses
+  17  load      20.0  measured    0.0694         26.6     SMC PSTR (whole system): 18.0 W DC, ÷0.90 for adapter/PSU losses
+  18  load      22.0  measured    0.0754         26.7     SMC PSTR (whole system): 19.8 W DC, ÷0.90 for adapter/PSU losses
+  19  load      21.5  measured    0.0815         26.7     SMC PSTR (whole system): 19.3 W DC, ÷0.90 for adapter/PSU losses
+  20  load      22.9  measured    0.0880         26.7     SMC PSTR (whole system): 20.6 W DC, ÷0.90 for adapter/PSU losses
+  21  load      24.0  measured    0.0947         26.6     SMC PSTR (whole system): 21.6 W DC, ÷0.90 for adapter/PSU losses
+  22  load      22.0  measured    0.1011         26.6     SMC PSTR (whole system): 19.8 W DC, ÷0.90 for adapter/PSU losses
+  23  load      21.1  measured    0.1072         26.6     SMC PSTR (whole system): 19.0 W DC, ÷0.90 for adapter/PSU losses
+  24  load      20.1  measured    0.1133         26.7     SMC PSTR (whole system): 18.1 W DC, ÷0.90 for adapter/PSU losses
+  25  load      16.8  measured    0.1188         26.6     SMC PSTR (whole system): 15.1 W DC, ÷0.90 for adapter/PSU losses
+  26  load      17.0  measured    0.1237         26.7     SMC PSTR (whole system): 15.3 W DC, ÷0.90 for adapter/PSU losses
+  27  load      17.2  measured    0.1287         26.6     SMC PSTR (whole system): 15.5 W DC, ÷0.90 for adapter/PSU losses
+  28  load      19.2  measured    0.1338         26.6     SMC PSTR (whole system): 17.3 W DC, ÷0.90 for adapter/PSU losses
+  29  load      20.3  measured    0.1395         26.6     SMC PSTR (whole system): 18.2 W DC, ÷0.90 for adapter/PSU losses
+  30  load      21.0  measured    0.1456         26.6     SMC PSTR (whole system): 18.9 W DC, ÷0.90 for adapter/PSU losses
+  31  load      19.1  measured    0.1515         26.6     SMC PSTR (whole system): 17.2 W DC, ÷0.90 for adapter/PSU losses
+  33  load      19.0  measured    0.1572         26.7     SMC PSTR (whole system): 17.1 W DC, ÷0.90 for adapter/PSU losses
+  34  load      24.2  measured    0.1636         26.7     SMC PSTR (whole system): 21.8 W DC, ÷0.90 for adapter/PSU losses
+  35  load      24.9  measured    0.1709         26.7     SMC PSTR (whole system): 22.4 W DC, ÷0.90 for adapter/PSU losses
+  36  load      24.7  measured    0.1783         26.7     SMC PSTR (whole system): 22.2 W DC, ÷0.90 for adapter/PSU losses
+  37  idle2     24.3  measured    0.1855         26.6     SMC PSTR (whole system): 21.9 W DC, ÷0.90 for adapter/PSU losses
+  38  idle2     20.0  measured    0.1921         10.5     SMC PSTR (whole system): 18.0 W DC, ÷0.90 for adapter/PSU losses
+  39  idle2     13.8  measured    0.1971          9.8     SMC PSTR (whole system): 12.4 W DC, ÷0.90 for adapter/PSU losses
+  40  idle2      6.0  measured    0.2000          9.8     SMC PSTR (whole system): 5.4 W DC, ÷0.90 for adapter/PSU losses
+  41  idle2      6.9  measured    0.2020          9.2     SMC PSTR (whole system): 6.2 W DC, ÷0.90 for adapter/PSU losses
+  42  idle2      7.2  measured    0.2041          9.3     SMC PSTR (whole system): 6.5 W DC, ÷0.90 for adapter/PSU losses
+  43  idle2      5.2  measured    0.2059          8.8     SMC PSTR (whole system): 4.7 W DC, ÷0.90 for adapter/PSU losses
+  44  idle2      5.3  measured    0.2074          8.7     SMC PSTR (whole system): 4.8 W DC, ÷0.90 for adapter/PSU losses
+  45  idle2      5.0  measured    0.2090          8.6     SMC PSTR (whole system): 4.5 W DC, ÷0.90 for adapter/PSU losses
+  46  idle2      4.7  measured    0.2104          9.1     SMC PSTR (whole system): 4.3 W DC, ÷0.90 for adapter/PSU losses
+  47  idle2      5.6  measured    0.2120          9.6     SMC PSTR (whole system): 5.0 W DC, ÷0.90 for adapter/PSU losses
+  49  idle2      5.2  measured    0.2136          9.8     SMC PSTR (whole system): 4.7 W DC, ÷0.90 for adapter/PSU losses
+  50  idle2      6.6  measured    0.2153          8.6     SMC PSTR (whole system): 5.9 W DC, ÷0.90 for adapter/PSU losses
+  51  idle2      5.0  measured    0.2170          9.0     SMC PSTR (whole system): 4.5 W DC, ÷0.90 for adapter/PSU losses
+  52  idle2      7.1  measured    0.2188          8.8     SMC PSTR (whole system): 6.4 W DC, ÷0.90 for adapter/PSU losses
+
+Sensor status at the end of the round:
+SMC system power (PSTR): ok
+Battery discharge (AppleSmartBattery): unavailable: PlatformNotSupportedException no battery installed
+CPU load (host_statistics): ok
+
+== Summary (mean wall watts per phase) ==
+round        phase   meter W  label      model-only W
+as found     idle       14.3  measured        12.2
+as found     load       20.8  measured        26.1
+as found     idle2       8.5  measured        10.4

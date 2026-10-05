@@ -1,0 +1,128 @@
+watts-probe 0.1.2 · 2026-10-04 17:57:07 +02:00
+OS: Microsoft Windows 10.0.26300 (X64), process X64
+Hardware: Windows, CPU "AMD Ryzen 9 6900HS with Radeon Graphics" (16 threads), GPU "AMD Radeon RX 6800S" (8176 MB), laptop
+
+== Sensors, read twice one second apart ==
+- Battery discharge (CallNtPowerInformation): available, nothing to report right now
+- Energy meters (EMI): Cpu 20.79 (EMI: VDDCR_VDD Power 5.4 W, VDDCR_SOC Power 3.9 W, Current Socket Power 16.9 W, Apu Power 7.9 W) [channels: VDDCR_VDD Power, VDDCR_SOC Power, Current Socket Power, Apu Power]
+- CPU load (GetSystemTimes): CpuLoad 0.0135 (GetSystemTimes)
+- GPU load (PDH GPU Engine): GpuLoad 0.004237 (PDH GPU Engine)
+
+== Round ==
+   t  phase   wall W  label      Wh total   model-only W   source
+   0  idle      28.7  estimated   0.0000         28.7     CPU 12.0 W (model, 30 % busy) + GPU 5.0 W (model, 0 % busy, game frame timing) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+   1  idle      29.2  estimated   0.0082         19.2     CPU 11.5 W (EMI: VDDCR_VDD Power 2.5 W, VDDCR_SOC Power 1.3 W, Current Socket Power 10.2 W, Apu Power 6.5 W) + GPU 5.9 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+   2  idle      32.6  estimated   0.0169         19.1     CPU 14.4 W (EMI: VDDCR_VDD Power 5.3 W, VDDCR_SOC Power 1.3 W, Current Socket Power 13.0 W, Apu Power 6.3 W) + GPU 5.9 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+   3  idle      26.8  estimated   0.0252         19.6     CPU 9.2 W (EMI: VDDCR_VDD Power 0.7 W, VDDCR_SOC Power 1.1 W, Current Socket Power 8.1 W, Apu Power 6.2 W) + GPU 6.1 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+   4  idle      34.5  estimated   0.0339         19.2     CPU 16.1 W (EMI: VDDCR_VDD Power 2.1 W, VDDCR_SOC Power 3.3 W, Current Socket Power 12.8 W, Apu Power 5.7 W) + GPU 5.9 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+   5  idle      26.9  estimated   0.0425         18.9     CPU 9.4 W (EMI: VDDCR_VDD Power 0.7 W, VDDCR_SOC Power 1.2 W, Current Socket Power 8.2 W, Apu Power 6.0 W) + GPU 6.0 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+   6  idle      29.8  estimated   0.0504         19.5     CPU 11.6 W (EMI: VDDCR_VDD Power 2.5 W, VDDCR_SOC Power 1.3 W, Current Socket Power 10.3 W, Apu Power 5.9 W) + GPU 6.3 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+   7  idle      29.3  estimated   0.0587         19.1     CPU 11.4 W (EMI: VDDCR_VDD Power 2.1 W, VDDCR_SOC Power 1.3 W, Current Socket Power 10.1 W, Apu Power 6.0 W) + GPU 6.1 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+   8  idle      41.9  estimated   0.0686         20.4     CPU 21.7 W (EMI: VDDCR_VDD Power 6.7 W, VDDCR_SOC Power 3.8 W, Current Socket Power 17.9 W, Apu Power 5.8 W) + GPU 6.7 W (model, 2 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+   9  idle      27.1  estimated   0.0782         19.6     CPU 9.2 W (EMI: VDDCR_VDD Power 0.7 W, VDDCR_SOC Power 1.1 W, Current Socket Power 8.1 W, Apu Power 6.1 W) + GPU 6.4 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  10  idle      30.3  estimated   0.0863         19.6     CPU 11.6 W (EMI: VDDCR_VDD Power 2.1 W, VDDCR_SOC Power 1.3 W, Current Socket Power 10.3 W, Apu Power 5.8 W) + GPU 6.7 W (model, 2 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  11  idle      30.1  estimated   0.0947         20.5     CPU 11.5 W (EMI: VDDCR_VDD Power 2.1 W, VDDCR_SOC Power 1.2 W, Current Socket Power 10.3 W, Apu Power 5.6 W) + GPU 6.6 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  12  idle      29.7  estimated   0.1030         19.7     CPU 11.4 W (EMI: VDDCR_VDD Power 2.1 W, VDDCR_SOC Power 1.3 W, Current Socket Power 10.1 W, Apu Power 6.5 W) + GPU 6.5 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  13  idle      33.4  estimated   0.1119         19.1     CPU 14.8 W (EMI: VDDCR_VDD Power 5.2 W, VDDCR_SOC Power 1.3 W, Current Socket Power 13.5 W, Apu Power 5.9 W) + GPU 6.3 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  14  idle      29.5  estimated   0.1207         19.3     CPU 11.4 W (EMI: VDDCR_VDD Power 2.2 W, VDDCR_SOC Power 1.3 W, Current Socket Power 10.1 W, Apu Power 5.7 W) + GPU 6.2 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  15  load      31.3  estimated   0.1293         21.4     CPU 12.6 W (EMI: VDDCR_VDD Power 3.0 W, VDDCR_SOC Power 1.2 W, Current Socket Power 11.3 W, Apu Power 5.6 W) + GPU 6.6 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  17  load      49.3  estimated   0.1425         56.9     CPU 28.4 W (EMI: VDDCR_VDD Power 14.2 W, VDDCR_SOC Power 3.3 W, Current Socket Power 25.0 W, Apu Power 10.3 W) + GPU 6.5 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  18  load      49.6  estimated   0.1602         56.6     CPU 28.9 W (EMI: VDDCR_VDD Power 14.5 W, VDDCR_SOC Power 3.4 W, Current Socket Power 25.5 W, Apu Power 16.6 W) + GPU 6.2 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  19  load      48.8  estimated   0.1779         56.7     CPU 28.3 W (EMI: VDDCR_VDD Power 14.0 W, VDDCR_SOC Power 3.4 W, Current Socket Power 24.9 W, Apu Power 19.8 W) + GPU 6.2 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  20  load      49.1  estimated   0.1958         56.6     CPU 28.4 W (EMI: VDDCR_VDD Power 14.2 W, VDDCR_SOC Power 3.3 W, Current Socket Power 25.0 W, Apu Power 21.0 W) + GPU 6.3 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  22  load      49.1  estimated   0.2133         56.6     CPU 28.5 W (EMI: VDDCR_VDD Power 14.2 W, VDDCR_SOC Power 3.4 W, Current Socket Power 25.1 W, Apu Power 21.1 W) + GPU 6.2 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  23  load      49.2  estimated   0.2312         56.5     CPU 28.7 W (EMI: VDDCR_VDD Power 14.4 W, VDDCR_SOC Power 3.4 W, Current Socket Power 25.3 W, Apu Power 21.1 W) + GPU 6.2 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  24  load      48.9  estimated   0.2490         56.4     CPU 28.4 W (EMI: VDDCR_VDD Power 14.0 W, VDDCR_SOC Power 3.5 W, Current Socket Power 24.9 W, Apu Power 21.2 W) + GPU 6.1 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  26  load      50.0  estimated   0.2664         56.7     CPU 29.2 W (EMI: VDDCR_VDD Power 14.9 W, VDDCR_SOC Power 3.4 W, Current Socket Power 25.8 W, Apu Power 21.2 W) + GPU 6.3 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  27  load      49.9  estimated   0.2840         56.4     CPU 29.4 W (EMI: VDDCR_VDD Power 14.9 W, VDDCR_SOC Power 3.5 W, Current Socket Power 25.9 W, Apu Power 21.2 W) + GPU 6.1 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  28  load      50.4  estimated   0.3021         56.6     CPU 29.6 W (EMI: VDDCR_VDD Power 14.9 W, VDDCR_SOC Power 3.6 W, Current Socket Power 26.0 W, Apu Power 21.2 W) + GPU 6.2 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  30  load      49.6  estimated   0.3216         57.1     CPU 28.5 W (EMI: VDDCR_VDD Power 14.2 W, VDDCR_SOC Power 3.4 W, Current Socket Power 25.1 W, Apu Power 21.5 W) + GPU 6.7 W (model, 2 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  31  load      48.7  estimated   0.3390         56.6     CPU 28.2 W (EMI: VDDCR_VDD Power 14.0 W, VDDCR_SOC Power 3.4 W, Current Socket Power 24.8 W, Apu Power 21.5 W) + GPU 6.1 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  32  load      48.7  estimated   0.3547         56.2     CPU 28.4 W (EMI: VDDCR_VDD Power 14.2 W, VDDCR_SOC Power 3.3 W, Current Socket Power 25.0 W, Apu Power 21.4 W) + GPU 6.0 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  33  load      49.1  estimated   0.3723         56.7     CPU 28.5 W (EMI: VDDCR_VDD Power 14.2 W, VDDCR_SOC Power 3.4 W, Current Socket Power 25.1 W, Apu Power 21.4 W) + GPU 6.2 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  35  load      49.2  estimated   0.3901         56.5     CPU 28.5 W (EMI: VDDCR_VDD Power 14.2 W, VDDCR_SOC Power 3.4 W, Current Socket Power 25.1 W, Apu Power 21.4 W) + GPU 6.3 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  36  idle2     50.3  estimated   0.4085         57.0     CPU 29.3 W (EMI: VDDCR_VDD Power 14.2 W, VDDCR_SOC Power 3.8 W, Current Socket Power 25.5 W, Apu Power 21.5 W) + GPU 6.4 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  37  idle2     36.9  estimated   0.4208         23.6     CPU 17.8 W (EMI: VDDCR_VDD Power 3.3 W, VDDCR_SOC Power 3.5 W, Current Socket Power 14.3 W, Apu Power 20.3 W) + GPU 6.2 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  38  idle2     40.2  estimated   0.4317         21.7     CPU 20.8 W (EMI: VDDCR_VDD Power 5.4 W, VDDCR_SOC Power 4.0 W, Current Socket Power 16.8 W, Apu Power 14.9 W) + GPU 6.2 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  39  idle2     43.6  estimated   0.4435         21.9     CPU 23.5 W (EMI: VDDCR_VDD Power 8.4 W, VDDCR_SOC Power 3.8 W, Current Socket Power 19.7 W, Apu Power 12.2 W) + GPU 6.4 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  40  idle2     29.8  estimated   0.4538         19.9     CPU 11.2 W (EMI: VDDCR_VDD Power 2.1 W, VDDCR_SOC Power 1.2 W, Current Socket Power 10.0 W, Apu Power 9.6 W) + GPU 6.7 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  41  idle2     30.8  estimated   0.4623         19.3     CPU 12.4 W (EMI: VDDCR_VDD Power 2.8 W, VDDCR_SOC Power 1.3 W, Current Socket Power 11.1 W, Apu Power 7.5 W) + GPU 6.4 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  42  idle2     38.3  estimated   0.4719         20.1     CPU 18.8 W (EMI: VDDCR_VDD Power 4.1 W, VDDCR_SOC Power 3.5 W, Current Socket Power 15.2 W, Apu Power 6.9 W) + GPU 6.6 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  43  idle2     37.0  estimated   0.4825         20.7     CPU 17.7 W (EMI: VDDCR_VDD Power 3.2 W, VDDCR_SOC Power 3.5 W, Current Socket Power 14.1 W, Apu Power 6.7 W) + GPU 6.5 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  44  idle2     36.2  estimated   0.4928         19.7     CPU 16.9 W (EMI: VDDCR_VDD Power 2.7 W, VDDCR_SOC Power 3.4 W, Current Socket Power 13.5 W, Apu Power 6.7 W) + GPU 6.6 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  45  idle2     29.9  estimated   0.5020         19.4     CPU 11.5 W (EMI: VDDCR_VDD Power 2.1 W, VDDCR_SOC Power 1.2 W, Current Socket Power 10.3 W, Apu Power 6.0 W) + GPU 6.5 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  46  idle2     40.4  estimated   0.5119         19.9     CPU 20.5 W (EMI: VDDCR_VDD Power 6.4 W, VDDCR_SOC Power 3.5 W, Current Socket Power 17.0 W, Apu Power 5.6 W) + GPU 6.6 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  47  idle2     29.8  estimated   0.5218         20.0     CPU 11.3 W (EMI: VDDCR_VDD Power 2.1 W, VDDCR_SOC Power 1.2 W, Current Socket Power 10.0 W, Apu Power 5.7 W) + GPU 6.7 W (model, 2 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  48  idle2     29.5  estimated   0.5301         19.3     CPU 11.4 W (EMI: VDDCR_VDD Power 2.2 W, VDDCR_SOC Power 1.3 W, Current Socket Power 10.1 W, Apu Power 5.7 W) + GPU 6.3 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  49  idle2     31.1  estimated   0.5385         20.3     CPU 12.3 W (EMI: VDDCR_VDD Power 3.0 W, VDDCR_SOC Power 1.3 W, Current Socket Power 11.1 W, Apu Power 5.7 W) + GPU 6.7 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+  50  idle2     30.5  estimated   0.5472         19.7     CPU 11.9 W (EMI: VDDCR_VDD Power 2.4 W, VDDCR_SOC Power 1.2 W, Current Socket Power 10.6 W, Apu Power 5.9 W) + GPU 6.7 W (model, 1 % busy, GPU counter) + rest 4 W (model) + built-in display 4 W (model), ÷0.87 for adapter/PSU losses
+
+Sensor status at the end of the round:
+Battery discharge (CallNtPowerInformation): ok, nothing this tick
+Energy meters (EMI): ok
+CPU load (GetSystemTimes): ok
+GPU load (PDH GPU Engine): ok
+
+== Round on battery ==
+   t  phase   wall W  label      Wh total   model-only W   source
+   0  idle      39.0  measured    0.0000         28.7     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+   1  idle      39.0  measured    0.0110         20.9     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+   2  idle      39.0  measured    0.0221         22.4     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+   3  idle      39.0  measured    0.0329         57.9     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+   4  idle      39.0  measured    0.0439         34.7     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+   5  idle      39.0  measured    0.0549         21.7     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+   6  idle      39.0  measured    0.0659         23.3     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+   7  idle      39.0  measured    0.0769         22.2     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+   8  idle      39.0  measured    0.0878         21.9     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+   9  idle      39.0  measured    0.0988         22.9     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+  10  idle      39.0  measured    0.1098         32.0     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+  11  idle      39.0  measured    0.1207         41.4     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+  12  idle      39.0  measured    0.1316         20.7     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+  13  idle      39.0  measured    0.1425         19.8     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+  14  idle      39.0  measured    0.1535         19.9     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+  16  load      39.0  measured    0.1693         26.7     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+  17  load      39.0  measured    0.1806         56.4     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+  18  load      39.0  measured    0.1943         56.5     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+  19  load      39.0  measured    0.2083         56.4     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+  21  load      39.0  measured    0.2218         56.7     battery discharge (CallNtPowerInformation): 33.9 W DC, ÷0.87 for adapter/PSU losses
+  22  load      19.8  measured    0.2322         56.3     battery discharge (CallNtPowerInformation): 17.2 W DC, ÷0.87 for adapter/PSU losses
+  23  load      19.8  measured    0.2393         56.4     battery discharge (CallNtPowerInformation): 17.2 W DC, ÷0.87 for adapter/PSU losses
+  25  load      19.8  measured    0.2463         56.3     battery discharge (CallNtPowerInformation): 17.2 W DC, ÷0.87 for adapter/PSU losses
+  26  load      19.8  measured    0.2534         56.4     battery discharge (CallNtPowerInformation): 17.2 W DC, ÷0.87 for adapter/PSU losses
+  27  load      19.8  measured    0.2604         56.5     battery discharge (CallNtPowerInformation): 17.2 W DC, ÷0.87 for adapter/PSU losses
+  28  load      20.6  measured    0.2677         56.2     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  30  load      20.6  measured    0.2750         56.3     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  31  load      20.6  measured    0.2823         56.5     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  32  load      20.6  measured    0.2897         56.2     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  34  load      20.6  measured    0.2970         56.1     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  35  load      20.6  measured    0.3045         56.4     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  36  idle2     20.6  measured    0.3124         56.5     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  37  idle2     20.6  measured    0.3181         21.4     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  38  idle2     20.6  measured    0.3239         19.1     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  39  idle2     20.6  measured    0.3297         19.7     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  40  idle2     20.6  measured    0.3354         20.2     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  41  idle2     20.6  measured    0.3412         20.6     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  42  idle2     20.6  measured    0.3470         19.8     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  43  idle2     20.6  measured    0.3528         19.8     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  44  idle2     20.6  measured    0.3586         19.2     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  45  idle2     20.6  measured    0.3643         19.4     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  46  idle2     20.6  measured    0.3701         20.1     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  47  idle2     20.6  measured    0.3759         20.0     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  48  idle2     20.6  measured    0.3817         20.1     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  49  idle2     20.6  measured    0.3874         19.8     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+  50  idle2     20.6  measured    0.3932         19.4     battery discharge (CallNtPowerInformation): 17.9 W DC, ÷0.87 for adapter/PSU losses
+
+Sensor status at the end of the round:
+Battery discharge (CallNtPowerInformation): ok
+Energy meters (EMI): ok
+CPU load (GetSystemTimes): ok
+GPU load (PDH GPU Engine): ok
+
+== Summary (mean wall watts per phase) ==
+round        phase   meter W  label      model-only W
+as found     idle       30.6  estimated       20.1
+as found     load       48.2  estimated       54.4
+as found     idle2      35.6  estimated       22.8
+on battery   idle       39.0  measured        27.4
+on battery   load       26.1  measured        54.5
+on battery   idle2      20.6  measured        22.3
