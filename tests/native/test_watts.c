@@ -72,11 +72,11 @@ int main(int argc, char **argv) {
     CHECK(watts_source(full, sizeof full) == need || need > (int)sizeof full);
     CHECK(strlen(full) > 0 && valid_utf8((const unsigned char *)full));
     for (int size = 1; size < 64; size++) {
-        char small[64];
-        memset(small, 'x', sizeof small);
-        CHECK(watts_source(small, size) > 0);
-        CHECK(strlen(small) < (size_t)size);
-        CHECK(valid_utf8((const unsigned char *)small));
+        char part[64];
+        memset(part, 'x', sizeof part);
+        CHECK(watts_source(part, size) > 0);
+        CHECK(strlen(part) < (size_t)size);
+        CHECK(valid_utf8((const unsigned char *)part));
     }
     printf("%.1f W, %.5f Wh, %s: %s\n", r.watts, r.session_wh, r.measured ? "measured" : "estimated", full);
 
