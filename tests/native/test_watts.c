@@ -4,6 +4,7 @@
 #include <string.h>
 #include "watts.h"
 #ifdef _WIN32
+#  define WIN32_LEAN_AND_MEAN
 #  include <windows.h>
 #  define sleep_ms(ms) Sleep(ms)
 #else
